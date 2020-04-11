@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :items
   resources :lists
   resources :users, only: [:create]
   get 'users', to: 'users#show'
