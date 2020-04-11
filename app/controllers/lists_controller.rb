@@ -1,7 +1,7 @@
 class ListsController < ApplicationController
     def index 
         @list = List.all
-        render json: {list: @list}, include: :user
+        render json: {list: @list}, include: :item
     end
     def show 
         @list = List.find(params[:id])
