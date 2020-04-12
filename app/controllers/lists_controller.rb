@@ -1,11 +1,11 @@
 class ListsController < ApplicationController
     def index 
         @list = List.all
-        render json: {list: @list}, include: :item
+        render json: {list: @list}, include: :items
     end
     def show 
         @list = List.find(params[:id])
-        render json:{list: @list}
+        render json:{list: @list}, include: :items
     end
     def create 
         @list = List.create(
