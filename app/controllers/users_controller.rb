@@ -1,7 +1,14 @@
 class UsersController < ApplicationController
     def show
         authenticate 
-        render json: {user: @user}, include: :list
+        render json: {user: @user}, :include =>{
+            :lists => {
+                :include => {
+                    :items => 
+                    {}
+                }
+            }
+        } 
     end
     def create 
         @user = User.create(
