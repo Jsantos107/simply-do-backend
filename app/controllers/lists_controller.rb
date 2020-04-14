@@ -16,10 +16,21 @@ class ListsController < ApplicationController
         )
         render json: {list: @list}
     end
+
+    def update
+        @list = List.find(params[:id])
+        
+        @list.update(
+            title: params[:title],
+            description: params[:description],
+            done: params[:done]
+        )
+        render json: @list
+    end
     
-      def destroy
+    def destroy
         @list = List.find(params[:id])
         @list.destroy
         render status: 200
-      end
+    end
 end

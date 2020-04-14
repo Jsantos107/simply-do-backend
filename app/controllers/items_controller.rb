@@ -17,9 +17,20 @@ class ItemsController < ApplicationController
         render json: {item: @item}
     end
     
-      def destroy
+    def update
+        @item = Item.find(params[:id])
+        
+        @item.update(
+            title: params[:title],
+            description: params[:description],
+            done: params[:done]
+        )
+        render json: @item
+    end
+    
+    def destroy
         @item = Item.find(params[:id])
         @item.destroy
         render status: 200
-      end
+    end
 end
