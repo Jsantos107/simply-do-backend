@@ -11,6 +11,7 @@ class ItemsController < ApplicationController
         @item = Item.create(
             title: params[:title],
             description: params[:description],
+            done: params[:done],
             list_id: params[:list_id]
         )
         render json: {item: @item}
