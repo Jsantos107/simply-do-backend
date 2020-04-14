@@ -13,16 +13,16 @@ user77 = User.create(username:"beau", password:"pj")
 user21 = User.create(username:"Mari", password:"1021")
 
 
-L1 = List.create(title: "PJ", description:"07-05", user: user77)
-L2 = List.create(title: "P", description:"07", user: user77)
-L3 = List.create(title: "P", description:"07", user: user21)
-L4 = List.create(title: "P", description:"07", user: user21)
+L1 = List.create(title: "PJ", description:"07-05", done: false, user: user77)
+L2 = List.create(title: "P", description:"07", done: true, user: user77)
+L3 = List.create(title: "P", description:"07", done: false, user: user21)
+L4 = List.create(title: "P", description:"07", done: false, user: user21)
 
 
-I1 = Item.create(title: "JP", description:"2017", list: L1)
-I5 = Item.create(title: "P", description:"17", list: L1)
-I2 = Item.create(title: "J", description:"05", list: L2)
-I3 = Item.create(title: "K", description:"07", list: L3)
-I4 = Item.create(title: "A", description:"03", list: L4)
+I1 = Item.create(title: "JP", description:"2017", done: false, list: L1)
+I5 = Item.create(title: "P", description:"17", done: false, list: L1)
+I2 = Item.create(title: "J", description:"05", done: true, list: L2)
+I3 = Item.create(title: "K", description:"07", done: false, list: L3)
+I4 = Item.create(title: "A", description:"03", done: false, list: L4)
 
 

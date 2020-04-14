@@ -11,6 +11,7 @@ class ListsController < ApplicationController
         @list = List.create(
             title: params[:title],
             description: params[:description],
+            done: params[:done],
             user_id: params[:user_id]
         )
         render json: {list: @list}
