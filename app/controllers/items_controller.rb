@@ -13,7 +13,7 @@ class ItemsController < ApplicationController
             description: params[:description],
             done: params[:done],
             list_id: params[:list_id]
-        )
+        )cd 
         render json: {item: @item}
     end
     
