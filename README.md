@@ -1,25 +1,36 @@
-# README
+# Simply-do-frontend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Table of contents
+* [General info](#general-info)
+* [Intro Video](#intro-video)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Contact](#contact)
 
-Things you may want to cover:
+## General info
+Simply Do is a fun and interactive todo app. Users can create checklists to have items or add to them as they go. Users can also check which list is done with the "simply done" feature. 
 
-* Ruby version
+## Intro Video
+![]()
 
-* System dependencies
+## Technologies
+* Ruby on rails 
+* Heroku
 
-* Configuration
+## Setup
+To run this project locally, clone the GitHub repository and run
 
-* Database creation
+```
+Rails db:create
+Rails db:migrate
+Rails db:seed
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# simply-do-backend
+## Features
+* Create and authenticate a user
+* Create and update list  
+* Create items for list
+* Check off which list are complete
+## Contact
+Created by [Jorge Santos](https://www.linkedin.com/in/santos-jorge)
